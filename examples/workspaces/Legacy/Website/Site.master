@@ -1,0 +1,4 @@
+<%@ Master Language="C#" %>
+<!DOCTYPE html>
+<html><head><title>Fictional demo</title><script src="scripts/orders.js"></script></head>
+<body><form runat="server"><asp:ContentPlaceHolder ID="Main" runat="server" /></form></body></html>

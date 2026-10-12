@@ -1,0 +1,32 @@
+# Copy to config.toml. All relative paths are relative to this file.
+[paths]
+workspaces = "examples/workspaces"
+net48_root = "examples/workspaces/Legacy"
+net8_root = "examples/workspaces/Modern"
+net48_solution = "examples/workspaces/Legacy/Legacy.sln"
+net8_solution = "examples/workspaces/Modern/Modern.sln"
+website_root = "examples/workspaces/Legacy/Website"
+index_dir = ".index"
+# Optional compiler helpers: uncomment after building on Windows.
+# roslyn_host_net48 = "roslyn-host/bin/Release/net48/RoslynHost.exe"
+# roslyn_host_net8 = "roslyn-host/bin/Release/net8.0/RoslynHost.exe"
+# markup_codegen = "markup-codegen/bin/Release/net48/MarkupCodegen.exe"
+# netfx_ref_assemblies = "C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework/.NETFramework/v4.8"
+
+[limits]
+roslyn_load_timeout_s = 900
+roslyn_query_timeout_s = 45
+max_results_default = 50
+max_results_hard = 500
+read_file_max_lines = 400
+
+[index]
+max_file_bytes = 2000000
+# Arrays replace their defaults; include the defaults you want to retain.
+exclude_dirs = [".git", ".vs", ".svn", ".index", ".venv", "obj", "bin", "node_modules", "packages", "TestResults", "PrecompiledWeb", "_ReSharper.Caches", ".nuget", "BuildProcessTemplates", "App_Data", "__pycache__"]
+exclude_suffixes = ["-release"]
+# vendor_js_pattern may override the built-in vendor-file regular expression.
+
+[build]
+configuration = "Debug"
+target_framework_root = ""

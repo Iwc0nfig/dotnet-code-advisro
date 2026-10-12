@@ -1,0 +1,97 @@
+Dotnet Code Advisor Monetization-Restricted License 1.0
+SPDX-License-Identifier: LicenseRef-Dotnet-Code-Advisor-Monetization-Restricted
+
+Copyright (c) 2026 Dotnet Code Advisor copyright holders
+
+1. Definitions
+
+"Software" means the code and documentation distributed with this license.
+"Modified Version" means a modification, fork, or derivative work containing
+or based on copyright-protected portions of the Software.
+"Licensor" means the copyright holder or holders granting you rights under
+this license. An authorized licensing representative may act for the Licensor.
+"You" means the individual or legal entity exercising those rights.
+
+2. Free permissions
+
+Subject to the conditions below, the Licensor grants you a worldwide,
+non-exclusive, royalty-free copyright license to use, inspect, copy, modify,
+and distribute the Software and Modified Versions for uses that do not involve
+Restricted Monetization as defined in section 3.
+
+These permissions include personal, educational, research, and internal
+business use. You may use the Software as an internal development tool while
+working on paid client projects or other commercial work, provided you do not
+undertake Restricted Monetization of the Software or a Modified Version.
+Creating and selling unrelated work using the Software as a tool does not,
+by itself, constitute Restricted Monetization.
+
+3. Restricted Monetization requires a separate paid license
+
+The free permissions in section 2 do not authorize:
+
+(a) selling, licensing for a fee, renting, or otherwise distributing or
+providing the Software or a Modified Version in exchange for money or other
+commercial consideration, whether standalone or bundled with another product;
+
+(b) providing a paid hosted, managed, software-as-a-service, API, or similar
+service that makes the Software's code-advice or code-analysis functionality
+available to customers or other third parties, including when access is part
+of a paid subscription or bundle.
+
+Calling a charge an installation, customization, access, or other service fee
+does not avoid this restriction if, in substance, the transaction supplies a
+paid copy of the Software or a Modified Version, or a paid service in (b).
+
+Paying employees or contractors to operate an internal deployment does not,
+by itself, constitute Restricted Monetization. Independent support or training
+fees are permitted when they do not supply a paid copy, paid hosted access, or
+other transaction described above. Voluntary donations that do not condition
+access to the Software or its hosted functionality are permitted.
+
+Before undertaking Restricted Monetization, you must obtain a separate
+written commercial license from the Licensor or its authorized representative
+and comply with its agreed payment terms. No price, royalty percentage,
+payment schedule, or commercial permission is implied by this public license.
+Contact the publisher of the repository from which this release was obtained
+to request a commercial agreement with the authorized rights holder.
+
+4. Notices and redistribution
+
+Keep this license and applicable copyright notices with every distributed
+copy of the Software or a Modified Version. Identify your changes and do not
+claim that the original publisher endorses them.
+
+Recipients must receive the portions of the Software covered by this license
+under these same terms. You may not grant rights in those portions that this
+license does not grant, remove the monetization restriction, or imply that a
+commercial license was granted. Your own independently authored additions and
+third-party components may have separate terms, but those terms do not expand
+the permissions granted here for the Software.
+
+5. Reserved rights and earlier permissions
+
+All rights not expressly granted are reserved. This license grants no right
+to use the Licensor's names or trademarks as your own branding. Rights that
+do not require the Licensor's permission under applicable law are unaffected.
+
+This license does not withdraw permissions already granted to you under an
+earlier license for an earlier copy, or replace the licenses of third-party
+components. It applies to the Software copies distributed under these terms.
+
+6. Termination
+
+Your permissions under this license end if you violate its conditions. The
+Licensor may reinstate them in writing. A commercial license, if granted,
+is governed by its own written terms.
+
+7. No warranty or liability
+
+To the extent permitted by applicable law, the Software is provided "as is",
+without warranties or conditions of any kind, including merchantability,
+fitness for a particular purpose, title, and non-infringement. The Licensor
+is not liable for claims, damages, or other liability arising from the
+Software or its use, whether in contract, tort, or otherwise.
+
+This is a custom source-available license, not the MIT License or an
+OSI-approved open-source license.

@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+    <AssemblyName>Demo.Legacy.Shared</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup><Reference Include="System.Net.Http" /></ItemGroup>
+</Project>

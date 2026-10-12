@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Legacy host uses Roslyn 4.8 for in-process MSBuild. Modern host uses 4.14.
+       MSBuild package 17.14.28 requires a compatible Visual Studio 2022 installation. -->
+  <PropertyGroup>
+    <TargetFrameworks>net48;net8.0</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <RoslynVersion Condition="'$(RoslynVersion)'=='' and '$(TargetFramework)'=='net48'">4.8.0</RoslynVersion>
+    <RoslynVersion Condition="'$(RoslynVersion)'==''">4.14.0</RoslynVersion>
+    <MSBuildPkgVersion Condition="'$(MSBuildPkgVersion)'==''">17.14.28</MSBuildPkgVersion>
+    <AssemblyName>RoslynHost</AssemblyName>
+    <RootNamespace>DotnetCodeAdvisor.RoslynHost</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+
+
+    <RollForward>LatestMajor</RollForward>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Locator" Version="1.11.2" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="$(RoslynVersion)" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="$(RoslynVersion)" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="$(RoslynVersion)" />
+
+    <PackageReference Include="Microsoft.Build" Version="$(MSBuildPkgVersion)" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Build.Framework" Version="$(MSBuildPkgVersion)" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="$(MSBuildPkgVersion)" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.Build.Tasks.Core" Version="$(MSBuildPkgVersion)" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.NET.StringTools" Version="$(MSBuildPkgVersion)" ExcludeAssets="runtime" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Asks ASP.NET itself for the C# it would compile for every page, user
+       control and master page of a Website Project.  net48 only: the page
+       compiler lives in System.Web, which has no .NET Core equivalent.
+       Kept apart from roslyn-host on purpose: it must not load Roslyn or
+       MSBuild into the same process as System.Web's hosting AppDomain. -->
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <AssemblyName>MarkupCodegen</AssemblyName>
+    <RootNamespace>DotnetCodeAdvisor.MarkupCodegen</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Web" />
+    <PackageReference Include="System.Text.Json" Version="9.0.0" />
+  </ItemGroup>
+</Project>
